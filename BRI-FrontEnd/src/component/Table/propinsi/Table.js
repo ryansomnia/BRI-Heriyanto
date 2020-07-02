@@ -29,6 +29,7 @@ class DataPropinsi extends React.Component {
         return (
 
             <div>
+                <h3>Tabel data Propinsi</h3>
                 <Table>
                     <thead >
                         <tr>

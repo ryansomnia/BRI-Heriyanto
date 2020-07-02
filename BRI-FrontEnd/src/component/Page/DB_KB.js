@@ -14,12 +14,13 @@ class Home extends Component {
 
             <div>
                 <Navigation logoTitle="BRI Life" />
-
+                <TabelKontrasepsi />
                 <TablePropinsi />
                 <TablePemakai />
-                <TabelKontrasepsi />
-                <Report />
+
+
                 <FormData />
+                <Report />
 
             </div>
         );

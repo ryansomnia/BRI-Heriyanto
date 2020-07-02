@@ -27,15 +27,16 @@ class DataPemakai extends React.Component {
     };
     render() {
         return (
-            <Row className="justify-content-md-center">
+            <div>
+                <h3>Tabel data Pemakai alat Kontrasepsi</h3>
                 <Table striped bordered hover size="sm" style={{ width: '30%' }}>
                     <thead style={{ textAlign: 'center' }}>
                         <tr>
-                            <th style={{ width: '2%' }}>Id</th>
-                            <th style={{ width: '20%' }}>Id Propinsi</th>
-                            <th style={{ width: '20%' }}>Id Kontrasepsi</th>
-                            <th style={{ width: '20%' }}>Jumlah Pemakai</th>
-                            <th style={{ width: '1%' }}>Action</th>
+                            <th>Id</th>
+                            <th>Id Propinsi</th>
+                            <th>Id Kontrasepsi</th>
+                            <th>Jumlah Pemakai</th>
+                            <th>Action</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -58,7 +59,8 @@ class DataPemakai extends React.Component {
                         })}
                     </tbody>
                 </Table>
-            </Row>
+
+            </div>
         );
     }
 }

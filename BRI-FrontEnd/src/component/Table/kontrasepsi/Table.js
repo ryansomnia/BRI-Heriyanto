@@ -27,12 +27,14 @@ class DataKontrasepsi extends React.Component {
     };
     render() {
         return (
+
             <Row className="justify-content-md-center">
+                <h3>Tabel data Kontrasepsi</h3>
                 <Table striped bordered hover size="sm" style={{ width: '30%' }}>
                     <thead style={{ textAlign: 'center' }}>
                         <tr>
                             <th style={{ width: '2%' }}>Id</th>
-                            <th style={{ width: '20%' }}>Nama Provinsi</th>
+                            <th style={{ width: '20%' }}>Nama Kontrasepsi</th>
                             <th style={{ width: '1%' }}>Action</th>
                         </tr>
                     </thead>

@@ -50,55 +50,61 @@ class FormData extends Component {
     render() {
         return (
 
-            <Col md={{ span: 4, offset: 4 }}></Col>
-            <div>
-                <Form onSubmit={this.postData.bind(this)}>
-                    <Form.Group>
-                        <Form.Label>ID Provinsi</Form.Label>
-                        <Form.Control
-                            type="number"
-                            placeholder="Provinsi"
-                            id="Id_Propinsi"
-                            onChange={this.handleFormChange}
-                            name="Id_Propinsi"
-                            value={this.state.Id_Propinsi}
-                            onChange={this.dataChange.bind(this)}
-                        />
-                    </Form.Group>
-
-                    <Form.Group>
-                        <Form.Label>Jumlah Pemakai</Form.Label>
-                        <Form.Control
-                            type="number"
-                            placeholder="Jumlah Penggunaan"
-                            onChange={this.handleFormChange}
-                            id="Jumlah_Pemakai"
-                            name="Jumlah_Pemakai"
-                            value={this.state.Jumlah_Pemakai}
-                            onChange={this.dataChange.bind(this)}
-                        />
-
-                        <Form.Group controlId="formBasicEmail">
-                            <Form.Label>Jumlah Pemakaian</Form.Label>
-                            <Form.Control type="text" placeholder="Enter Text..." />
-
+            <Col md={{ span: 4, offset: 4 }}>
+                <div>
+                    <Form onSubmit={this.postData.bind(this)}>
+                        <Form.Group>
+                            <Form.Label>ID Provinsi</Form.Label>
+                            <Form.Control
+                                type="text"
+                                placeholder="Provinsi"
+                                id="Id_Propinsi"
+                                onChange={this.handleFormChange}
+                                name="Id_Propinsi"
+                                value={this.state.Id_Propinsi}
+                                onChange={this.dataChange.bind(this)}
+                            />
                         </Form.Group>
 
 
+                        <Form.Group>
+                            <Form.Label>Kontrasepsi</Form.Label>
+                            <Form.Control
+                                type="text"
+                                placeholder="Masukan Kontrasepsi"
+                                onChange={this.handleFormChange}
+                                id="Id_Kontrasepsi"
+                                name="Id_Kontrasepsi"
+                                value={this.state.Id_Kontrasepsi}
+                                onChange={this.dataChange.bind(this)}
+                            />
+                        </Form.Group>
+
+
+
+                        <Form.Group>
+                            <Form.Label>Jumlah Pemakai</Form.Label>
+                            <Form.Control
+                                type="text"
+                                placeholder="Jumlah Penggunaan"
+                                onChange={this.handleFormChange}
+                                id="Jumlah_Pemakai"
+                                name="Jumlah_Pemakai"
+                                value={this.state.Jumlah_Pemakai}
+                                onChange={this.dataChange.bind(this)}
+                            />
+
+                        </Form.Group>
                         <Button variant="primary" type="submit">
-                            Save
-  </Button>
-                </Form>
-
-
-
-
+                            Submit
+            </Button>
+                    </Form>
+                </div>
+            </Col >
         );
-
-
     }
+}
 
 
-};
 
 export default FormData

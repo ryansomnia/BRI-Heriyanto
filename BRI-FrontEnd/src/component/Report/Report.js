@@ -26,32 +26,36 @@ class Report extends Component {
     }
     render() {
         return (
-            <Table>
-                <thead>
-                    <tr>
-                        <th>No</th>
-                        <th>Propinsi</th>
-                        <th>Pil</th>
-                        <th>Kondom</th>
-                        <th>IUD</th>
-                        <th>Jumlah</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {this.state.post.map((post, id) => {
-                        return (
-                            <tr key={id}>
-                                <td>{post.id_propinsi}</td>
-                                <td>{post.nama_propinsi}</td>
-                                <td>{post.Nama_Kontrasepsi}</td>
-                                <td>{post.Nama_Kontrasepsi}</td>
-                                <td>{post.Nama_Kontrasepsi}</td>
-                                <td></td>
-                            </tr>
-                        );
-                    })}
-                </tbody>
-            </Table>
+            <div>
+                <h3>  REKAPITULASI PEMAKAI ALAT KONTRASEPSI DI INDONESIA </h3>
+                <Table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Propinsi</th>
+                            <th>Pil</th>
+                            <th>Kondom</th>
+                            <th>IUD</th>
+                            <th>Jumlah</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {this.state.post.map((post, id) => {
+                            return (
+                                <tr key={id}>
+                                    <td>{post.id_propinsi}</td>
+                                    <td>{post.nama_propinsi}</td>
+                                    <td>{post.Nama_Kontrasepsi}</td>
+                                    <td>{post.Nama_Kontrasepsi}</td>
+                                    <td>{post.Nama_Kontrasepsi}</td>
+                                    <td></td>
+                                </tr>
+                            );
+                        })}
+                    </tbody>
+                </Table>
+                <Button>Print</Button>
+            </div>
         );
     }
 }
